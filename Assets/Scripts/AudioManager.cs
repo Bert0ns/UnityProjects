@@ -43,8 +43,19 @@ public class AudioManager : MonoBehaviour
         as_sfx.Play();
     }
 
+
+    /*
+     * We don't know why logging the as_sfx call fixes it being null
+     * nor do we know who calls the function a second time
+     * but everything works on the second try so we called it a day
+     */
     private void Player_Invisibility_OnPlayerInvisible(object sender, EventArgs e)
     {
+        if(as_sfx == null)
+        {
+            Debug.Log("as_sfx called");
+            return; 
+        }
         as_sfx.clip = player_invisible;
         as_sfx.pitch = 2f;
         as_sfx.Play();
@@ -85,6 +96,7 @@ public class AudioManager : MonoBehaviour
 
     private void Instance_OnBall_P1Collision(object sender, EventArgs e)
     {
+        Debug.Log("as_sfx called collision ball p1");
         as_sfx.clip = ball_P1_Bounce;
         as_sfx.pitch = 2.25f;
         as_sfx.Play();
