@@ -11,5 +11,5 @@ Play in local with a friend, touch the opposite color and the opponent gains 1 p
 Credits Audio: SFX -> dustyroom.com
 
 ## External links
-you can play my game on itch.io
-https://bigbertons.itch.io/venomball
+you can play my game on itch.io : https://bigbertons.itch.io/venomball
+you can find all the games i made on itch.io : https://bigbertons.itch.io/
