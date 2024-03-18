@@ -57,18 +57,30 @@ public class Player_Invisibility : MonoBehaviour
 
     private void Invisibility_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
-        Debug.Log("Invisibility performed by Player: " + num_player);
+        Debug.Log("Tries to become invisible Player: " + num_player);
         if(invisibility_timer <= 0f && abilityCooldown <= 0f)
         {
             OnPlayerInvisible?.Invoke(this, EventArgs.Empty);
 
             ToggleInvisibilityPlayer();
             abilityCooldown = abilityCooldown_max;
+            Debug.Log("Toggled invisibility of Player: " + num_player);
         }
     }
 
     private void OnDisable()
     {
+        switch (num_player)
+        {
+            case 2:
+                //Player 2
+                input.Player2.Invisibility.performed -= Invisibility_performed;
+                break;
+            default:
+                //Player 1
+                input.Player.Invisibility.performed -= Invisibility_performed;
+                break;
+        }
         input.Disable();
     }
     void Start()
