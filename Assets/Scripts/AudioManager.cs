@@ -96,7 +96,6 @@ public class AudioManager : MonoBehaviour
 
     private void Instance_OnBall_P1Collision(object sender, EventArgs e)
     {
-        Debug.Log("as_sfx called collision ball p1");
         as_sfx.clip = ball_P1_Bounce;
         as_sfx.pitch = 2.25f;
         as_sfx.Play();
