@@ -17,5 +17,6 @@ You only need a keyboard and a mouse, the controls are explained in game
 Credits Audio: SFX -> dustyroom.com
 
 ## External links
-you can play my game on itch.io : https://bigbertons.itch.io/venomball
-you can find all the games i made on itch.io : https://bigbertons.itch.io/
+You can play my game on itch.io : https://bigbertons.itch.io/venomball
+
+You can find all the games i made on itch.io : https://bigbertons.itch.io/
