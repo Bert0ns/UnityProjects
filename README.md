@@ -1,6 +1,6 @@
 # Venom Ball
 
-I have uploaded all the relevant files (I think / I wish) to actually open the project in Unity : version 2022.3.21f1 
+I have uploaded all the relevant files (I think / I wish) to actually open the project in Unity : version 2022.3.22f1 
 
 ## About the game
 
